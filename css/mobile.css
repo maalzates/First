@@ -1,0 +1,23 @@
+@media (max-width: 600px) {
+
+.main-section {
+    margin-top: 0;
+}
+.products{
+
+    flex-wrap: wrap;
+    padding-top: 50px;
+    height: 50rem;
+
+}
+
+.product {
+    margin-top: 0;
+    
+}
+
+.features-section {
+    flex-wrap: wrap;
+}
+}
+

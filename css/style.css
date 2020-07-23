@@ -1,0 +1,310 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* VARIABLES */
+
+:root {
+--green-color: #c05baf;
+--white-color: white;
+/* espaciado */
+--space: 1rem;
+/* box shadow */
+--box: 0 0 5px #c1bcbc;
+}
+/* VARIABLES */
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+
+}
+
+nav {
+    padding: 0.5rem 1rem;
+    background-color: rgb(167, 83, 167);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--box);
+    position: sticky;
+
+}
+nav a img {
+    height: 2.2rem;
+    width: 6.1rem;
+
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin-left: var(--space);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+.main-section {
+    padding: 15%;
+    text-align: center ;
+    margin-top: -8rem;
+    padding-bottom: 5%;
+}
+
+.products {
+    background: url("../img/curva-fondo.svg") no-repeat;
+    height: 25rem;
+    background-size: cover;
+    background-position: center top;
+    padding: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    padding: 10px;
+    margin-top: -190px;
+}
+
+.product .content {
+    padding: 15px;
+    background-color: var(--white-color);
+    box-shadow: var(--box);
+
+}
+
+.image-content {
+    text-align: center;
+}
+
+.image-content img {
+    width: 22.75rem;
+    height: 14rem;
+}
+.main-button {
+    background-color: var(--green-color);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--white-color);
+    padding: var(--space);
+    cursor: pointer;
+}
+
+.main-button:hover {
+    background-color: var(--green-color)
+}
+
+.features-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem 0;
+    border-bottom: 1px solid #c1bcbc;
+}
+
+.features-section .pic-sec-2 {
+    max-width:25rem;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+.features-section .pic-sec-2 p {
+    text-align: left;
+}
+.features-section .pic-sec-2 img {
+    width: 11rem;
+    height: 10rem;
+}
+.menciones {
+    text-align: center;
+    padding: 3.5rem;
+}
+.testimony-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+
+.testimony-section .person .img {
+    width: fill;
+    height: 8rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+
+}
+.testimony-section .person .img img {
+    position: absolute;
+    top: -50px;
+    right: -300px;
+}
+
+.testimony-section .person .img .normalwoman {
+    position: absolute;
+    top: -110px;
+    right: -280px;
+}
+
+.testimony-section .person .img .redhead {
+    position: absolute;
+    top: -120px;
+    right: -185px;
+}
+
+.testimony-section .person .img .rubio {
+    position: absolute;
+    top: -25px;
+    right: -230px;
+}
+
+.testimony-section .person {
+    box-shadow: var(--box);
+    width: 20%;
+    min-width: 260.19px;
+    height: auto;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    
+    border-radius: 5px 5px 0 0;
+}
+
+.testimony-section .person p {
+    text-align: left;
+    padding: 2rem;
+}
+
+footer {
+    padding: 2rem;
+    background: #313337;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+/* PAGINA DE PRODUCTOS */
+.t-productos {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 20%;
+    padding-top: 2%;
+}
+
+.product-container {
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#product-2{
+    flex-direction: row-reverse;
+}
+
+.product-container .pi {
+    width: 20.8rem;
+    height: 20.8rem;
+}
+
+.product-container .pi img {
+    width: 20.8rem;
+    height: 20.8rem;
+}
+
+.product-container .pc {
+    width: 52rem;
+}
+
+/* PAGINA DE PAGO */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 11%;
+    height: 50%;
+}
+
+main .f-producto, main .form {
+    box-shadow: var(--box);
+}
+.f-producto {
+    width: 20.5rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f-producto .f-image, .f-producto .f-image img {
+    width: 134px;
+    height: 134px;
+}
+
+.f-content {
+margin-left: 1rem;
+}
+
+.form {
+    margin-left: 2rem;
+    padding: 1rem;
+    padding-bottom: 2rem;
+}
+
+.form input {
+    width: 22rem;
+    height: 3rem;
+    box-sizing: border-box;
+}
+
+.form input:focus {
+   border: 1px solid purple;
+   border-radius: 5px;
+   outline: none;
+}
+.form button {
+    width: 22.5rem;
+    background-color: rgb(167, 83, 167);
+    border: none;
+    padding: .5rem;
+    border-radius: 5px;
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+.form button:hover {
+    background-color: rgb(255, 28, 255);
+}
+
+/* FAQS */
+
+.faqs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5%;
+    flex: 1 0 auto;
+}
+
+.faqs-container div {
+    width: 60%;
+}
